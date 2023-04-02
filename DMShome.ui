@@ -1,0 +1,1535 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1198</width>
+    <height>859</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1201</width>
+      <height>861</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>3</number>
+    </property>
+    <widget class="QWidget" name="addDoctorTab">
+     <property name="styleSheet">
+      <string notr="true">QWidget {
+background-color: white
+}</string>
+     </property>
+     <attribute name="title">
+      <string>Add Doctor</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1200</width>
+        <height>830</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="title">
+       <string>Add Doctor</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <widget class="QLabel" name="firstNameLabel">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>40</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>First Name</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lastNameLabel">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>80</y>
+         <width>61</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Last Name</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="phoneNumberLabel">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>120</y>
+         <width>91</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Phone Number</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="emailLabel">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>160</y>
+         <width>47</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Email</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="dateOfBirthLabel">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>200</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Age</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="genderLabel">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>240</y>
+         <width>47</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Gender</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="addressLabel">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>280</y>
+         <width>47</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Address</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="specializationLabel">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>320</y>
+         <width>91</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Specialization</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="yearsOfExperienceLabel">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>360</y>
+         <width>111</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Years Of Experience</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="firstNameInputAddDoctorTab">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>40</y>
+         <width>420</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lastNameInputAddDoctorTab">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>80</y>
+         <width>420</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="phoneNumberInputAddDoctorTab">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>120</y>
+         <width>420</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="emailInputAddDoctorTab">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>160</y>
+         <width>420</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="addressInputAddDoctorTab">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>280</y>
+         <width>420</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="genderSelectorAddDoctorTab">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>240</y>
+         <width>420</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="currentIndex">
+        <number>-1</number>
+       </property>
+       <item>
+        <property name="text">
+         <string>Male</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Female</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Non-Binary</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QComboBox" name="specializationSelectorAddDoctorTab">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>320</y>
+         <width>420</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="currentIndex">
+        <number>-1</number>
+       </property>
+       <item>
+        <property name="text">
+         <string>Anatomical Pathology</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Anesthesiology</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Cardiology</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Cardiovascular/Thoracic Surgery</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Clinical Immunology/Allergy</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Critical Care Medincine</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Dermatology</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Diagnostic Radiology</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Emergency Medicine</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Endocrinology And Metabolism</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Family Medicine</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Gastroenterology</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>General Internal Medicine</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>General Surgery</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>General/Clinical Pathology</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Geriatric Medicine</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Hematology</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Medical Biochemistry</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Medical Genetics</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Medical Microbiology And Infectious Diseases</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Medical Oncology</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Nephrology</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Neurology</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Neurosurgery</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Nuclear Medicine</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Obstetrics/Gyenecology</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Occupational Medince</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Opthalmology</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Orthopedic Surgery</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Otolaryngology</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Pediatrics</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Physical Medicine And Rehabilitation (PM &amp; R)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Plastic Surgery</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QSpinBox" name="yearsOfExperienceSelectorAddDoctorTab">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>360</y>
+         <width>390</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="value">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="addDoctorButton">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>400</y>
+         <width>511</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Add Doctor</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="addDoctorFeedback">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>440</y>
+         <width>511</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="ageSelectorAddDoctorTab">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>200</y>
+         <width>421</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Modify Doctor Information</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1200</width>
+        <height>830</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Modify Doctor Information</string>
+      </property>
+      <widget class="QLabel" name="doctorNameLabelModify">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>40</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Doctor Name</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="doctorNameComboBoxModifyTab">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>40</y>
+         <width>420</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="doctorIdLabelModify">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>80</y>
+         <width>61</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Doctor Id</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="doctorIdLineEditReadOnlyModifyTab">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>80</y>
+         <width>420</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+       <property name="placeholderText">
+        <string>No Existing Doctors</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="firstNameLabelModify">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>120</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>First Name</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lastNameLabelModify">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>160</y>
+         <width>61</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Last Name</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="phoneNumberLabelModify">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>200</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Phone Number</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="emailLabelModify">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>240</y>
+         <width>47</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Email</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="ageLabelModify">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>280</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Age</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="genderLabelModify">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>320</y>
+         <width>61</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Gender</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="addressLabelModify">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>360</y>
+         <width>61</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Address</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="specializationLabelModify">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>400</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Specialization</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="yearsOfExperienceLabelModify">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>440</y>
+         <width>131</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Years Of Experience</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="doctorFirstNameLineEditModifyTab">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>120</y>
+         <width>420</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="doctorLastNameLineEditModifyTab">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>160</y>
+         <width>420</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="doctorPhoneNumberLineEditModifyTab">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>200</y>
+         <width>420</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="doctorEmailLineEditModifyTab">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>240</y>
+         <width>420</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="doctorAddressLineEditModifyTab">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>360</y>
+         <width>420</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="doctorSaveChangesButton">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>480</y>
+         <width>511</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Save Changes</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="doctorDeleteButton">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>520</y>
+         <width>511</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Delete Doctor</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="modifyDoctorTabFeedbackLabel">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>560</y>
+         <width>511</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="yearsOfExperienceSelectorModifyTab">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>440</y>
+         <width>390</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="specializationSelectorModifyDoctorTab">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>400</y>
+         <width>420</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="currentIndex">
+        <number>-1</number>
+       </property>
+       <item>
+        <property name="text">
+         <string>Anatomical Pathology</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Anesthesiology</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Cardiology</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Cardiovascular/Thoracic Surgery</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Clinical Immunology/Allergy</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Critical Care Medincine</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Dermatology</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Diagnostic Radiology</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Emergency Medicine</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Endocrinology And Metabolism</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Family Medicine</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Gastroenterology</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>General Internal Medicine</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>General Surgery</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>General/Clinical Pathology</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Geriatric Medicine</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Hematology</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Medical Biochemistry</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Medical Genetics</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Medical Microbiology and Infectious Diseases</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Medical Oncology</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Nephrology</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Neurology</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Neurosurgery</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Nuclear Medicine</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Obstetrics/Gyenecology</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Occupational Medicine</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Opthalmology</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Orthopedic Surgery</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Otolaryngology</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Pediatrics</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Physical Medicine And Rehabilitation (PM &amp; R)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Plastic Surgery</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QSpinBox" name="doctorAgeSelectorModifyTab">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>280</y>
+         <width>421</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="doctorGenderSelectorModifyTab">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>320</y>
+         <width>420</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="currentIndex">
+        <number>-1</number>
+       </property>
+       <item>
+        <property name="text">
+         <string>Male</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Female</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Non-Binary</string>
+        </property>
+       </item>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Add Patient</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1111</width>
+        <height>841</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="title">
+       <string>Add Patient</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <widget class="QLabel" name="firstNameLabel_2">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>40</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>First Name</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lastNameLabel_2">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>80</y>
+         <width>61</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Last Name</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="phoneNumberLabel_2">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>120</y>
+         <width>91</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Phone Number</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="emailLabel_2">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>160</y>
+         <width>47</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Email</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="dateOfBirthLabel_2">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>200</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Age</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="genderLabel_2">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>240</y>
+         <width>47</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Gender</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="addressLabel_2">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>280</y>
+         <width>47</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Address</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="firstNameInputAddPatientTab">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>40</y>
+         <width>420</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lastNameInputAddPatientTab">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>80</y>
+         <width>420</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="phoneNumberInputAddPatientTab">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>120</y>
+         <width>420</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="emailInputAddPatientTab">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>160</y>
+         <width>420</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="addressInputAddPatientTab">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>280</y>
+         <width>420</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="genderSelectorAddPatientTab">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>240</y>
+         <width>420</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="currentIndex">
+        <number>-1</number>
+       </property>
+       <item>
+        <property name="text">
+         <string>Male</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Female</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Non-Binary</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QPushButton" name="addPatientButton">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>320</y>
+         <width>511</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Add Patient</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="addPatientFeedback">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>360</y>
+         <width>511</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="ageSelectorAddPatientTab">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>200</y>
+         <width>421</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>Modify Patient</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox_4">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1200</width>
+        <height>830</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Modify Patient Information</string>
+      </property>
+      <widget class="QLabel" name="doctorNameLabelModify_2">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>40</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Patient Name</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="patientNameComboBoxModifyTab">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>40</y>
+         <width>420</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="doctorIdLabelModify_2">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>80</y>
+         <width>61</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Patient Id</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="patientIdLineEditReadOnlyModifyTab">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>80</y>
+         <width>420</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+       <property name="placeholderText">
+        <string>No Existing Patients</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="firstNameLabelModify_2">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>120</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>First Name</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lastNameLabelModify_2">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>160</y>
+         <width>61</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Last Name</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="phoneNumberLabelModify_2">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>200</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Phone Number</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="emailLabelModify_2">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>240</y>
+         <width>47</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Email</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="ageLabelModify_2">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>280</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Age</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="genderLabelModify_2">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>320</y>
+         <width>61</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Gender</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="addressLabelModify_2">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>360</y>
+         <width>61</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Address</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="patientFirstNameLineEditModifyTab">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>120</y>
+         <width>420</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="patientLastNameLineEditModifyTab">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>160</y>
+         <width>420</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="patientPhoneNumberLineEditModifyTab">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>200</y>
+         <width>420</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="patientEmailLineEditModifyTab">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>240</y>
+         <width>420</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="patientAddressLineEditModifyTab">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>360</y>
+         <width>420</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="patientSaveChangesButton">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>400</y>
+         <width>511</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Save Changes</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="patientDeleteButton">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>440</y>
+         <width>511</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Delete Patient</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="modifyPatientTabFeedbackLabel">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>480</y>
+         <width>511</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="patientAgeSelectorModifyTab">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>280</y>
+         <width>421</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="patientGenderSelectorModifyTab">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>320</y>
+         <width>420</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="currentIndex">
+        <number>-1</number>
+       </property>
+       <item>
+        <property name="text">
+         <string>Male</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Female</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Non-Binary</string>
+        </property>
+       </item>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
